@@ -16,7 +16,7 @@ export function Login(){
       <a href="/forget-password">forget password?</a> 
       <br/>
       <br/>
-      <a href="/signup-page">Don't have an account?</a>
+      <a href="/signup-page">Don't have an account? SIGNUP HERE</a>
     </div>
 
     </div>  
