@@ -6,9 +6,8 @@ import { API } from './global';
 
 
 const formValidationSchema = yup.object({
-  username: yup.string().min(8).required()
-  .matches(/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i),
-  password: yup.string().min(4).required(),
+  username: yup.string().min(8).required(),
+  password: yup.string().min(8).required(),
 });
 
 
