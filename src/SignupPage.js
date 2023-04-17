@@ -62,7 +62,7 @@ const navigate = useNavigate();
         />
         {touched.password && errors.password ? errors.password : null}
 
-      <Button className='login-button'
+      <Button className='signup-button'
         type='submit'
         variant="outlined">
         Submit
