@@ -32,7 +32,7 @@ const navigate = useNavigate();
         body: JSON.stringify(values),
       });
       
-        const result = await data.json();
+        const result = data.json();
         console.log("✅ Success", result);
         navigate("/");
     
