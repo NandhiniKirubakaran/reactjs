@@ -1,10 +1,13 @@
 import React from "react";
+import { Navigate, useNavigate } from "react-router-dom";
 import StripeCheckout from "react-stripe-checkout";
 import { Col, Row, Card, CardTitle, Button, } from "reactstrap";
 
 
 
 export default function CartListing({ mobile = {} }) {
+
+  const navigate = useNavigate();
 
   const makePayment = (token) => {
     const body = {
@@ -19,7 +22,7 @@ export default function CartListing({ mobile = {} }) {
       headers,
       body: JSON.stringify(body),
     }).then((response) => {
-      console.log(response);
+      navigate("/home-page");
     }).catch((err) => {
       console.log(err);
     });
